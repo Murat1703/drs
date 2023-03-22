@@ -1,0 +1,84 @@
+@media (max-width: 1000px){
+    .main-content{
+        padding-top: 100px;
+        grid-template-columns: auto;
+    }
+    .main-right{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .service-cards{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 800px){
+    .menu-list, .contact-us{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        background: #0d6efd;
+    }
+    .menu-burger{
+        display: block;
+        cursor: pointer;
+    }
+    .main-left{
+        z-index: 5;
+    }
+    .right-side-main{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .about-content{
+        grid-template-columns: auto;       
+    }
+    .right-side-about{
+        margin-top: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    .right-about{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .advantages-cards-content{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 760px){
+    .top-services{
+        display: block;
+    }
+    .service-cards{
+        grid-template-columns: auto;
+    }
+    .service-card-item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .advantages-cards-content{
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+    .about-cards{
+        grid-template-columns: auto;
+    }
+    .about-card-item{
+        max-width: 100%;
+    }
+    .inp-data{
+        grid-template-columns: auto;
+        gap: 0;
+    }
+    .inp-field{
+        margin: 10px 0;
+    }
+    .contacts-content{
+        flex-direction: column;
+    }
+}

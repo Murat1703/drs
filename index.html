@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <script src="js/vanilla-tilt.js" defer></script>
+    <script src="js/particles.js" defer></script> <!-- stats.js lib --> 
+    <script src="js/stats.js" defer></script>
+    <script src="https://mapgl.2gis.com/api/js/v1" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>DRS</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner container">
+            <nav class="nav-menu">
+                <div class="logo">DRS</div>
+                <ul class="menu-list">
+                    <li><a href="">Домой</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">О Нас</a></li>
+                    <li><a href="">Преимущества</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <a href="tel:+77017545148" class="contact-us">+77017545148</a>
+                <div class="menu-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main" >
+        <div class="main-bg" id="particles-js" >
+            <div class="main-inner container">
+                <div class="main-content" >
+                    <div class="main-left">
+                        <p class="top-title">Специалисты с многолетним опытом</p>
+                        <h1 class="main-title">IT решения для вашего бизнеса</h1>
+                        <p class="main-subtitle">Комплексное обслуживание информационных систем </p>
+                        <a href="#" class="main-btn">Подробнее</a>
+                    </div>
+                    <div class="main-right">
+                        <img src="img/illustration.png" alt="illustration" class="right-side-main" data-tilt data-tilt-max="10" data-tilt-speed="10000" data-tilt-perspective="1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-inner container">
+            <div class="top-services">
+                <div class="services-text">
+                    <p class="top-title">Услуги</p>
+                    <p class="services-title">Наши услуги</p>
+                    <p class="main-subtitle">Комплексное обслуживание IT сегмента вашего бизнеса</p>
+                </div>
+                <a href="" class="main-btn blue-btn">Все услуги</a>
+            </div>
+            <div class="service-cards">
+                <div class="service-card-item">
+                    <img src="img/services/servers.png" alt="serv" class="service-card-icon">
+                    <p class="service-card-title">
+                        Обслуживание серверов
+                    </p>
+                    <p class="service-card-desc">
+                        Обслуживание серверного оборудования
+                    </p>
+                    <a href="" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card-item">
+                    <img src="img/services/pc.png" alt="serv" class="service-card-icon">
+                    <p class="service-card-title">
+                        Обслуживание ПК
+                    </p>
+                    <p class="service-card-desc">
+                        Устранение неполадок, настройка оборудования и периферии
+                    </p>
+                    <a href="" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card-item">
+                    <img src="img/services/network.png" alt="serv" class="service-card-icon">
+                    <p class="service-card-title">
+                        Монтаж СКС
+                    </p>
+                    <p class="service-card-desc">
+                        Монтаж структурированных кабельных систем
+                    </p>
+                    <a href="" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card-item">
+                    <img src="img/services/cctv.png" alt="serv" class="service-card-icon">
+                    <p class="service-card-title">
+                        Системы видеонаблюдения
+                    </p>
+                    <p class="service-card-desc">
+                        Установка видеонаблюдения в  Вашем офисе или доме
+                    </p>
+                    <a href="" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card-item">
+                    <img src="img/services/dev.png" alt="serv" class="service-card-icon">
+                    <p class="service-card-title">
+                        Разработка сайтов
+                    </p>
+                    <p class="service-card-desc">
+                        Разработка сайтов для развития вашего бизнеса
+                    </p>
+                    <a href="" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card-item">
+                    <img src="img/services/eq.png" alt="serv" class="service-card-icon">
+                    <p class="service-card-title">
+                        Поставка оборудования
+                    </p>
+                    <p class="service-card-desc">
+                        Поставка IT оборудования высокого качества от производитля
+                    </p>
+                    <a href="" class="service-link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-inner container">
+            <div class="about-content">
+                <div class="left-about">
+                    <p class="top-title">О Нас</p>
+                    <p class="services-title">Наши преимущества</p>
+                    <p class="main-subtitle">Работаем в своей сфере более 13 лет</p>
+                    <div class="about-cards">
+                        <div class="about-card-item">
+                            <div class="about-card-item-img">
+                                <img src="img/about/speed.png" alt="speed" class="about-img">
+                            </div>    
+                            <div class="about-card-item-text">
+                                <p class="about-card-title">Быстрое реагирование</p>
+                                <p class="about-card-desc">Оперативная реакция на заявку</p>
+                            </div>
+                        </div>
+                        <div class="about-card-item">
+                            <div class="about-card-item-img">
+                                <img src="img/about/cert.png" alt="cert" class="about-img">
+                            </div>    
+                            <div class="about-card-item-text">
+                                <p class="about-card-title">Квалифицированные специалисты</p>
+                                <p class="about-card-desc">Сертифицированные профессионалы</p>
+                            </div>
+                        </div>
+
+                        <div class="about-card-item">
+                            <div class="about-card-item-img">
+                                <img src="img/about/security.png" alt="security" class="about-img">
+                            </div>    
+                            <div class="about-card-item-text">
+                                <p class="about-card-title">Зашита информации</p>
+                                <p class="about-card-desc">Защита от шифровальщиков</p>
+                            </div>
+                        </div>
+
+                        <div class="about-card-item">
+                            <div class="about-card-item-img">
+                                <img src="img/about/24-7.png" alt="24" class="about-img">
+                            </div>    
+                            <div class="about-card-item-text">
+                                <p class="about-card-title">24/7 онлайн поддержка</p>
+                                <p class="about-card-desc">Круглостуочный мониторинг</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right-about">
+                    <img src="img/about-illustration.png" alt="illustration" class="right-side-about" data-tilt data-tilt-max="10" data-tilt-speed="10000" data-tilt-perspective="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages-inner container">
+            <div class="advantages-cards-content">
+                <div class="advantages-card-item">
+                    <div class="advantages-card-item-content">
+                        <img src="img/works/projects.png" alt="" class="advantages-card-item-img">
+                        <p class="advantages-card-title">700+</p>
+                        <p class="advantages-card-desc">Выполнено проектов</p>
+                    </div>
+                </div>
+                <div class="advantages-card-item">
+                    <div class="advantages-card-item-content">
+                        <img src="img/works/job.png" alt="" class="advantages-card-item-img">
+                        <p class="advantages-card-title">25+</p>
+                        <p class="advantages-card-desc">Выполненых работ</p>
+                    </div>
+                </div>
+                <div class="advantages-card-item">
+                    <div class="advantages-card-item-content">
+                        <img src="img/works/company.png" alt="" class="advantages-card-item-img">
+                        <p class="advantages-card-title">20+</p>
+                        <p class="advantages-card-desc">Компаний на оутсорсе</p>
+                    </div>
+                </div>
+                <div class="advantages-card-item">
+                    <div class="advantages-card-item-content">
+                        <img src="img/works/exp.png" alt="" class="advantages-card-item-img">
+                        <p class="advantages-card-title">12+</p>
+                        <p class="advantages-card-desc">Лет опыта </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="contact-form-inner container">
+            <p class="contact-form-title">Остались вопросы?</p>
+            <p class="contact-form-desc">Напишите нам и Наш менеджер свяжется с вами в течении 30 минут</p>
+            <form action="" class="contact-form-content">
+                <div class="inp-data">
+                    <div class="inp-field">
+                        <input type="text" id="name" class="name-input">
+                        <label class="field-label" for="name">Имя <span>*</span></label>
+                    </div>
+                    <div class="inp-field">
+                        <input type="text" id="number" class="name-input">
+                        <label class="field-label" for="number">Номер <span>*</span></label>
+                    </div>    
+                </div>
+                <div class="inp-field">
+                    <input type="text" id="subject" class="name-input">
+                    <label class="field-label" for="subject">Тема <span>*</span></label>
+                </div>
+                <div class="inp-field">
+                    <textarea rows="5" cols="25"  id="msg" class="name-input"></textarea>
+                    <label class="field-label" for="msg">Ваше сообщение <span>*</span></label>
+                </div>
+                <input type="submit" value="Отправить" class="main-btn blue-btn">
+            </form>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="contacts-inner container">
+            <p class="contacts-title">Наши контакты</p>
+            <div class="contacts-content">
+                <div class="contacts-card">
+                    <p class="contacts-city">Алматы</p>
+                    <p class="contacts-adress">БЦ "Zhibek Zholy", улица Жибек Жолы 135, блок 3</p>
+                    <div class="email-contact">
+                        <div class="email-icon-container">
+                            <div class="email-icon-img"></div>
+                        </div> 
+                        <div class="email-content">
+                            <p class="email-title">E-mail:</p>
+                            <p class="email-link"><a href="mailto:info@drs.kz">info@drs.kz</a></p>
+                        </div>               
+                    </div>
+                    <div class="email-contact">
+                        <div class="email-icon-container">
+                            <div class="email-icon-img __phone-icon-img"></div>
+                        </div> 
+                        <div class="email-content">
+                            <p class="email-title">Телефон:</p>
+                            <p class="email-link"><a href="tel:+77017545148">+77017545148</a></p>
+                        </div>               
+                    </div>
+                </div>
+                <div class="contacts-map" id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner container">
+            <p class="footer-text">© 2023 DRS</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
